@@ -29,7 +29,7 @@ do #loop the menu over and over until the user exits
       echo -n "Hostname : "; hostname; 
       echo -n "DNS domain : "; domainname;
       echo -n "Fully qualified domain name : "; hostname --fqdn;
-      echo -n "Network address (IP) : "; hostname -i;
+      echo -n "Network address (IP) : "; hostname -I | awk '{print $1}';
       echo -n "DNS name servers (DNS IP) : "; grep "nameserver" /etc/resolv.conf ;;
    3) echo "--------------------------------------------------------------------"
       echo " Network information "     
@@ -49,7 +49,7 @@ do #loop the menu over and over until the user exits
    5)echo "-----------------------------------"
      echo " List of last logged in users " 
      echo "-----------------------------------"
-     last -R;;
+     last ;;
    6)echo "--------------------------------------"
      echo " Public IP information "
      echo "--------------------------------------"
