@@ -3,13 +3,13 @@
 while true
 do #loop the menu over and over until the user exits
   date; #date and menu setup
-  echo "------------------"
-  echo "Main Menu"
-  echo  "-----------------"
-  echo "1. Operating system information"
-  echo "2. Hostname and DNS information"
+  echo "-----------------------------------"
+  echo " Main Menu"
+  echo "-----------------------------------"
+  echo "1. Operating system info"
+  echo "2. Hostname and DNS info"
   echo "3. Network info"
-  echo "4. WHo is online"
+  echo "4. Who is online"
   echo "5. Last logged in users"
   echo "6. My IP address"
   echo "7. My disk usage"
@@ -45,7 +45,10 @@ do #loop the menu over and over until the user exits
       echo "*** Interface traffic information ***"
       echo "*************************************"
       netstat -i; ;;
-   4)who -H ;;
+   4)echo "-------------------------------"
+     echo " Who is online"
+     echo "-------------------------------"
+	   who -H ;;
    5)echo "-----------------------------------"
      echo " List of last logged in users " 
      echo "-----------------------------------"
