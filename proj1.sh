@@ -14,7 +14,7 @@ fname="$2" #obtain the file name
 filepath=`pwd`
 fstart="$1"
 fstart="${fstart:2}" #manipulate the input string to generate the file header
-ded="/filename.html"
+ded="/filetree.html"
 varr=$filepath$ded
 cd ~ #change into the tagret directory
 #use find . with -perm -444 to only find directores that are atleast readable and send any error messages to null
@@ -29,8 +29,8 @@ mv file2 $varr #use the argument name
 rm file
 
 cd $filepath #go to home
-markdown filename.html >htm #use markdown to convert file to html format
-mv htm filename.html #change the name of the resulting html file
+markdown filetree.html >htm #use markdown to convert file to html format
+mv htm filetree.html #change the name of the resulting html file
 
 
 
