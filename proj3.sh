@@ -69,7 +69,7 @@ do #loop the menu over and over until the user exits
       sh ./proj1.sh  ;;
    9) sh ./proc.sh;;
    10) exit;;
-   q) exit ;;
+   
   esac
   echo -n "Press [Enter] key to continue..."
   read cont
