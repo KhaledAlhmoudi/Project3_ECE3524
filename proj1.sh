@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-if (( $# != 0 )); then #check that there are exactly 2 agruments inputted
+if (( $# != 0 )); then #check that there are exactly no input agruments inputted
 
      echo "Invalid Argument Number" #print error message
 
